@@ -203,7 +203,8 @@ def launch_setup(context, *args, **kwargs):
     )
 
     rviz_config_file = PathJoinSubstitution(
-        [FindPackageShare(description_package), "rviz", "view_robot.rviz"]
+        # [FindPackageShare(description_package), "rviz", "view_robot.rviz"]    original configuration
+        [FindPackageShare(description_package), "rviz", "view_robot_with_box.rviz"]
     )
 
     # define update rate
